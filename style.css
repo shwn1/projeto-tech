@@ -14,7 +14,9 @@
 *{
     margin: 0px;
     padding: 0px;
-font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-destaque)
+
+
 
 
 }
@@ -31,11 +33,12 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 
-body{
-background-color: rgba(255, 255, 255, 0.451);
-margin-top: 0;
-margin-left: 0;
-margin-right: 0;
+
+
+html, body{
+
+min-height: 100%;
+
 }
 
 header{
@@ -78,22 +81,103 @@ nav a:hover{
 }
 
 main{
-    min-width: 300px;
-    max-width: 1000px;
-    background-color: white;
-    margin: 0px 70px 0px 70px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.399);
-    margin-bottom: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin: auto;
+    min-height: 100%;
+    background: black;
+    color: white;
 }
+
+
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 1.5em;
+    color: white;
+    font-weight: bolder;
+
+}
+
+
+section.imagem{
+    padding-left: 150px;
+    box-shadow: inset 6px 6px 8px black;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: var(--fonte-destaque);
+}
+
+section#img01{
+    background-image: url(wallpaper01.jpeg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02{
+    background-image: url(wallpaper02.jpeg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img03{
+    background-image: url(wallpaper03.jpeg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img04{
+    background-image: url(wallpaper04.jpeg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img05{
+    background-image: url(wallpaper05.jpeg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img06{
+    background-image: url(wallpaper06.jpeg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+section.imagem > p{
+
+    padding-bottom: 2em;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    
+    
+    
+
+}
+
+section.imagem > h1{
+
+color: white;
+text-shadow: 0px 0px 10px rgb(0, 0, 0);
+font-weight: bolder;
+font-variant: small-caps;
+}
+
 
 footer{
     background-color: black;
     color: white;
-    height: 40px;
+    padding: 10px;
     align-items: center;
 }
 
@@ -101,7 +185,7 @@ footer > p{
     text-decoration: none;
     text-align: center;
     font-weight: bolder;
-    padding-top: 10px;
+    
 }
 
 img{
@@ -110,27 +194,5 @@ img{
     margin: auto;
 }
 
-p{
-    font-family: var(--fonte-destaque);
-    font-weight: bolder;
-}
 
-h1{
-    font-family: var(--fonte-destaque);
-    font-weight: bolder;
-}
 
-h2{
-    font-family: var(--fonte-destaque);
-    font-weight: bolder;
-}
-
-h3{
-    font-family: var(--fonte-destaque);
-    font-weight: bolder;
-
-}
-
-article > h1{
-    text-align: center;
-}
